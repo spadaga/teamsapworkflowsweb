@@ -88,11 +88,12 @@ export async function fetchSAPWorkflows() {
         }
 
         // Fetch mock data from mockWorkflows.json
-        const mockResponse = await fetch('/mockWorkflows.json');
-        const mockData =[]// await mockResponse.json(); //[];//
-        console.log('Fetched mock data:', mockData);
+        //const mockResponse = await fetch('/mockWorkflows.json');
+       // const mockData =[]// await mockResponse.json(); //[];//
+       // console.log('Fetched mock data:', mockData);
 
-        let mockWorkflows = [];
+       let mockWorkflows = [];
+console.log('Mock data fetch skipped or failed, using empty array');
         if (Array.isArray(mockData)) {
             mockWorkflows = mockData;
         } else {
