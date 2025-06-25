@@ -7,16 +7,14 @@ module.exports = function(app) {
       target: 'https://c6674ca9trial.it-cpitrial03-rt.cfapps.ap21.hana.ondemand.com',
       changeOrigin: true,
       pathRewrite: {
-        '^/api': '', // Remove /api prefix when forwarding
+        '^/api': '', // Remove /api prefix when forwarding to target
       },
       onProxyReq: function (proxyReq, req, res) {
         console.log('Proxying request to:', proxyReq.path);
       },
       onError: function (err, req, res) {
         console.error('Proxy error:', err);
-        res.status(500).send('Proxy error occurred');
-      },
-      logLevel: 'debug', // Add debug logging
+      }
     })
   );
 };
