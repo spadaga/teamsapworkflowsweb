@@ -5,7 +5,7 @@ import './App.css';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMoneyBillWave, faWallet,faLock, faChartLine, faSpinner } from '@fortawesome/free-solid-svg-icons';
+import {  faWallet,faLock, faChartLine, faSpinner } from '@fortawesome/free-solid-svg-icons';
 
 function App() {
   const [workflows, setWorkflows] = useState([]);
