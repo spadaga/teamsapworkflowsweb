@@ -1,0 +1,52 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/teams/v1.21/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.21",
+  "version": "1.0.1",
+  "id": "123e4567-e89b-12d3-a456-426614174000",
+  "developer": {
+    "name": "Suresh Padaga From Yash",
+    "websiteUrl": "https://teams-workflow-app.vercel.app",
+    "privacyUrl": "https://teams-workflow-app.vercel.app/privacy",
+    "termsOfUseUrl": "https://teams-workflow-app.vercel.app/terms"
+  },
+  "icons": {
+    "color": "icon-color.png",
+    "outline": "icon-outline.png"
+  },
+  "name": {
+    "short": "Workflow Management Dashboard",
+    "full": "Workflow Management Dashboard (SAP & ServiceNow)"
+  },
+  "description": {
+    "short": "Manage SAP and ServiceNow workflows in Teams",
+    "full": "A comprehensive dashboard to view, approve, and reject workflows from SAP and ServiceNow directly within Microsoft Teams. Streamline your workflow approvals with real-time data integration."
+  },
+  "accentColor": "#6264A7",
+  "staticTabs": [
+    {
+      "entityId": "sapWorkflowDashboard",
+      "name": "SAP",
+      "contentUrl": "https://teams-workflow-app.vercel.app/sap",
+      "websiteUrl": "https://teams-workflow-app.vercel.app/sap",
+      "scopes": ["personal"],
+      "context": ["personalTab"]
+    },
+    {
+      "entityId": "servicenowWorkflowDashboard",
+      "name": "ServiceNow",
+      "contentUrl": "https://yash-coming-soon.vercel.app/",
+      "websiteUrl": "https://yash-coming-soon.vercel.app/",
+      "scopes": ["personal"],
+      "context": ["personalTab"]
+    }
+  ],
+  "permissions": [
+    "identity",
+    "messageTeamMembers"
+  ],
+  "validDomains": [
+    "teams-workflow-app.vercel.app",
+    "c6674ca9trial.it-cpitrial03-rt.cfapps.ap21.hana.ondemand.com",
+    "c6674ca9trial.authentication.ap21.hana.ondemand.com"
+  ]
+}
