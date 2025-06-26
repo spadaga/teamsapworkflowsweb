@@ -21,11 +21,12 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "set HTTPS=true&&react-scripts start",
-    "start:prod": "serve -s",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+ "prebuild": "copy web.config build\\web.config",
+  "start": "set HTTPS=true&&react-scripts start",
+  "start:prod": "serve -s",
+  "build": "react-scripts build",
+  "test": "react-scripts test",
+  "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
